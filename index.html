@@ -1,0 +1,5020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TCERA International | Crafting Elegance for Your Home</title>
+
+<meta name="description"
+content="TCERA International — premium sanitaryware, imported handmade sinks, quartz sinks and elegant bathroom solutions from Thangadh, Gujarat.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root{
+    --black:#080909;
+    --dark:#0e1010;
+    --dark2:#141716;
+    --card:#191c1b;
+
+    --white:#f5f4ef;
+    --muted:#a4aaa5;
+
+    --gold:#c6a86b;
+    --gold-light:#e1c88f;
+
+    --teal:#708b83;
+
+    --line:rgba(255,255,255,.10);
+
+    --max:1240px;
+
+    --radius:24px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--black);
+    color:var(--white);
+    font-family:"DM Sans",sans-serif;
+    overflow-x:hidden;
+}
+
+body.menu-open{
+    overflow:hidden;
+}
+
+img{
+    display:block;
+    width:100%;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button,
+input,
+textarea{
+    font:inherit;
+}
+
+.container{
+    width:min(92%,var(--max));
+    margin:auto;
+}
+
+
+/* =========================================================
+   PRELOADER
+========================================================= */
+
+.preloader{
+    position:fixed;
+    inset:0;
+    z-index:99999;
+    background:#050606;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:.8s ease;
+}
+
+.preloader.hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+.loader{
+    text-align:center;
+}
+
+.loader-logo{
+    width:82px;
+    height:82px;
+
+    border:1px solid rgba(198,168,107,.7);
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-family:"Playfair Display",serif;
+    font-size:25px;
+
+    color:var(--gold-light);
+
+    animation:loaderPulse 1.5s infinite;
+}
+
+.loader-text{
+    margin-top:17px;
+
+    font-size:9px;
+    letter-spacing:5px;
+    text-transform:uppercase;
+
+    color:#aeb3ae;
+}
+
+@keyframes loaderPulse{
+
+    50%{
+        transform:scale(1.08);
+        box-shadow:0 0 45px rgba(198,168,107,.15);
+    }
+
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar{
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:5000;
+
+    padding:22px 0;
+
+    transition:.35s ease;
+}
+
+.navbar.scrolled{
+    background:rgba(7,8,8,.84);
+
+    backdrop-filter:blur(20px);
+
+    border-bottom:1px solid var(--line);
+
+    padding:13px 0;
+}
+
+.nav-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:13px;
+}
+
+.logo-mark{
+    width:47px;
+    height:47px;
+
+    border:1px solid rgba(198,168,107,.7);
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:var(--gold-light);
+
+    font-family:"Playfair Display",serif;
+
+    font-size:17px;
+}
+
+.logo-text strong{
+    display:block;
+
+    font-size:16px;
+
+    letter-spacing:.8px;
+}
+
+.logo-text small{
+    display:block;
+
+    margin-top:3px;
+
+    color:var(--gold-light);
+
+    font-size:8px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+}
+
+.nav-links{
+    display:flex;
+
+    align-items:center;
+
+    gap:29px;
+}
+
+.nav-links a{
+    position:relative;
+
+    font-size:12px;
+
+    color:#d0d5d1;
+}
+
+.nav-links a::after{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-7px;
+
+    width:0;
+    height:1px;
+
+    background:var(--gold);
+
+    transition:.3s ease;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+.nav-cta{
+    padding:11px 19px;
+
+    border:1px solid rgba(198,168,107,.6);
+
+    border-radius:50px;
+
+    color:var(--gold-light)!important;
+}
+
+.nav-cta::after{
+    display:none;
+}
+
+.menu-toggle{
+    display:none;
+
+    width:46px;
+    height:46px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    background:rgba(0,0,0,.25);
+
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+}
+
+.menu-lines{
+    width:19px;
+    height:1px;
+
+    background:white;
+
+    position:relative;
+}
+
+.menu-lines::before,
+.menu-lines::after{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    width:19px;
+    height:1px;
+
+    background:white;
+}
+
+.menu-lines::before{
+    top:-6px;
+}
+
+.menu-lines::after{
+    top:6px;
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+.mobile-menu{
+    position:fixed;
+
+    inset:0;
+
+    z-index:4500;
+
+    background:rgba(5,6,6,.98);
+
+    backdrop-filter:blur(25px);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.4s ease;
+}
+
+.mobile-menu.open{
+    opacity:1;
+    visibility:visible;
+}
+
+.mobile-close{
+    position:absolute;
+
+    top:22px;
+    right:5%;
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+    border:1px solid var(--line);
+
+    background:none;
+
+    color:white;
+
+    font-size:25px;
+
+    cursor:pointer;
+}
+
+.mobile-links{
+    text-align:center;
+}
+
+.mobile-links a{
+    display:block;
+
+    font-family:"Playfair Display",serif;
+
+    font-size:42px;
+
+    margin:13px 0;
+
+    color:#e8e9e5;
+
+    transition:.3s ease;
+}
+
+.mobile-links a:hover{
+    color:var(--gold-light);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    min-height:100svh;
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+    align-items:center;
+
+    isolation:isolate;
+}
+
+.hero-slides{
+    position:absolute;
+
+    inset:0;
+
+    z-index:-3;
+}
+
+.hero-slide{
+    position:absolute;
+
+    inset:0;
+
+    background-size:cover;
+    background-position:center;
+
+    opacity:0;
+
+    transform:scale(1.07);
+
+    transition:
+        opacity 1.4s ease,
+        transform 7s ease;
+}
+
+.hero-slide.active{
+    opacity:1;
+
+    transform:scale(1);
+}
+
+.hero::before{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:-2;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5,7,7,.95) 0%,
+            rgba(5,7,7,.78) 42%,
+            rgba(5,7,7,.27) 100%
+        );
+}
+
+.hero::after{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    height:190px;
+
+    z-index:-1;
+
+    background:
+        linear-gradient(
+            transparent,
+            var(--black)
+        );
+}
+
+.hero-content{
+    max-width:850px;
+
+    padding-top:90px;
+}
+
+.eyebrow{
+    display:flex;
+    align-items:center;
+
+    gap:11px;
+
+    color:var(--gold-light);
+
+    font-size:10px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:22px;
+}
+
+.eyebrow::before{
+    content:"";
+
+    width:35px;
+    height:1px;
+
+    background:var(--gold);
+}
+
+.hero h1{
+    font-family:"Playfair Display",serif;
+
+    font-size:
+        clamp(
+            53px,
+            8vw,
+            101px
+        );
+
+    font-weight:500;
+
+    line-height:.97;
+
+    letter-spacing:-3px;
+}
+
+.hero h1 span{
+    color:var(--gold-light);
+
+    font-style:italic;
+}
+
+.hero-description{
+    max-width:600px;
+
+    margin-top:26px;
+
+    color:#c7ceca;
+
+    font-size:15px;
+
+    line-height:1.85;
+}
+
+.hero-buttons{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:13px;
+
+    margin-top:34px;
+}
+
+.btn{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:9px;
+
+    padding:14px 23px;
+
+    border-radius:50px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    border:1px solid rgba(255,255,255,.18);
+
+    cursor:pointer;
+
+    transition:.25s ease;
+}
+
+.btn-gold{
+    background:var(--gold);
+
+    color:#15130e;
+
+    border-color:var(--gold);
+}
+
+.btn-gold:hover{
+    background:var(--gold-light);
+}
+
+.btn-outline{
+    background:rgba(255,255,255,.04);
+
+    color:white;
+}
+
+.btn-outline:hover{
+    color:var(--gold-light);
+
+    border-color:var(--gold);
+}
+
+.hero-bottom{
+    position:absolute;
+
+    bottom:30px;
+
+    left:0;
+
+    width:100%;
+}
+
+.hero-bottom-inner{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+}
+
+.hero-note{
+    color:#aeb5b0;
+
+    font-size:10px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+.slide-number{
+    color:var(--gold-light);
+
+    font-size:11px;
+
+    letter-spacing:2px;
+}
+
+
+/* =========================================================
+   SECTION COMMON
+========================================================= */
+
+section{
+    position:relative;
+
+    padding:115px 0;
+}
+
+.section-heading{
+    max-width:790px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+}
+
+.section-heading .eyebrow{
+    justify-content:center;
+}
+
+.section-heading h2{
+    font-family:"Playfair Display",serif;
+
+    font-size:
+        clamp(
+            40px,
+            5vw,
+            65px
+        );
+
+    font-weight:500;
+
+    line-height:1.04;
+
+    margin-bottom:18px;
+}
+
+.section-heading h2 span{
+    color:var(--gold-light);
+
+    font-style:italic;
+}
+
+.section-heading p{
+    color:var(--muted);
+
+    font-size:14px;
+
+    line-height:1.85;
+}
+
+
+/* =========================================================
+   FEATURE STRIP
+========================================================= */
+
+.feature-strip{
+    background:#111514;
+
+    border-top:1px solid var(--line);
+
+    border-bottom:1px solid var(--line);
+
+    padding:27px 0;
+}
+
+.feature-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+}
+
+.feature{
+    text-align:center;
+
+    padding:10px 20px;
+
+    border-right:1px solid var(--line);
+}
+
+.feature:last-child{
+    border-right:0;
+}
+
+.feature-icon{
+    color:var(--gold-light);
+
+    font-size:22px;
+
+    margin-bottom:9px;
+}
+
+.feature strong{
+    display:block;
+
+    font-size:13px;
+}
+
+.feature span{
+    display:block;
+
+    margin-top:4px;
+
+    color:#7f8984;
+
+    font-size:10px;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-grid{
+    display:grid;
+
+    grid-template-columns:
+        .92fr 1.08fr;
+
+    gap:70px;
+
+    align-items:center;
+}
+
+.about-image{
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:27px;
+
+    box-shadow:
+        0 30px 75px rgba(0,0,0,.45);
+}
+
+.about-image img{
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+    transition:.7s ease;
+}
+
+.about-image:hover img{
+    transform:scale(1.04);
+}
+
+.about-badge{
+    position:absolute;
+
+    left:20px;
+    right:20px;
+    bottom:20px;
+
+    padding:18px;
+
+    border-radius:17px;
+
+    background:rgba(8,9,9,.82);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.1);
+}
+
+.about-badge strong{
+    display:block;
+
+    font-family:"Playfair Display",serif;
+
+    font-size:21px;
+
+    color:var(--gold-light);
+}
+
+.about-badge span{
+    color:#aeb5b0;
+
+    font-size:10px;
+}
+
+.about-content h3{
+    font-family:"Playfair Display",serif;
+
+    font-size:40px;
+
+    font-weight:500;
+
+    line-height:1.2;
+
+    margin-bottom:21px;
+}
+
+.about-content h3 span{
+    color:var(--gold-light);
+}
+
+.about-content p{
+    color:var(--muted);
+
+    font-size:14px;
+
+    line-height:1.9;
+
+    margin-bottom:16px;
+}
+
+.about-points{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:12px;
+
+    margin-top:29px;
+}
+
+.about-point{
+    padding:18px;
+
+    border:1px solid var(--line);
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.025);
+}
+
+.about-point strong{
+    display:block;
+
+    color:var(--gold-light);
+
+    font-size:13px;
+
+    margin-bottom:5px;
+}
+
+.about-point span{
+    color:#828b86;
+
+    font-size:11px;
+}
+
+
+/* =========================================================
+   PRODUCT COLLECTIONS
+========================================================= */
+
+.collections{
+    background:#0c0e0e;
+}
+
+.collection-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:15px;
+}
+
+.collection-card{
+    height:430px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    isolation:isolate;
+}
+
+.collection-card::after{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:1;
+
+    background:
+        linear-gradient(
+            transparent 28%,
+            rgba(0,0,0,.93)
+        );
+}
+
+.collection-card img{
+    position:absolute;
+
+    inset:0;
+
+    height:100%;
+    width:100%;
+
+    object-fit:cover;
+
+    transition:.7s ease;
+}
+
+.collection-card:hover img{
+    transform:scale(1.08);
+}
+
+.collection-content{
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    z-index:2;
+
+    padding:27px 22px;
+}
+
+.collection-number{
+    color:var(--gold-light);
+
+    font-size:9px;
+
+    letter-spacing:2px;
+
+    margin-bottom:8px;
+}
+
+.collection-content h3{
+    font-family:"Playfair Display",serif;
+
+    font-size:27px;
+
+    font-weight:500;
+
+    margin-bottom:7px;
+}
+
+.collection-content p{
+    color:#c1c8c4;
+
+    font-size:11px;
+
+    line-height:1.6;
+}
+
+
+/* =========================================================
+   PRODUCTS
+========================================================= */
+
+.product-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+}
+
+.product-card{
+    overflow:hidden;
+
+    background:var(--card);
+
+    border:1px solid var(--line);
+
+    border-radius:21px;
+
+    transition:.35s ease;
+}
+
+.product-card:hover{
+    transform:translateY(-7px);
+
+    border-color:
+        rgba(198,168,107,.45);
+}
+
+.product-image{
+    aspect-ratio:1.12/1;
+
+    overflow:hidden;
+
+    background:#eee;
+}
+
+.product-image img{
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s ease;
+}
+
+.product-card:hover .product-image img{
+    transform:scale(1.06);
+}
+
+.product-info{
+    padding:22px;
+}
+
+.product-tag{
+    color:var(--gold-light);
+
+    font-size:9px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+.product-info h3{
+    font-family:"Playfair Display",serif;
+
+    font-size:26px;
+
+    font-weight:500;
+
+    margin:7px 0;
+}
+
+.product-info p{
+    color:#8f9893;
+
+    font-size:12px;
+
+    line-height:1.75;
+}
+
+.product-link{
+    display:inline-flex;
+
+    color:var(--gold-light);
+
+    font-size:11px;
+
+    margin-top:17px;
+}
+
+
+/* =========================================================
+   MANUFACTURING / PROCESS
+========================================================= */
+
+.process-section{
+    background:#111413;
+}
+
+.process-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:15px;
+}
+
+.process-card{
+    min-height:270px;
+
+    padding:27px;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1a1e1c,
+            #121514
+        );
+
+    border:1px solid var(--line);
+
+    transition:.35s ease;
+}
+
+.process-card:hover{
+    transform:translateY(-6px);
+
+    border-color:
+        rgba(198,168,107,.4);
+}
+
+.process-number{
+    color:var(--gold-light);
+
+    font-size:11px;
+
+    letter-spacing:2px;
+}
+
+.process-icon{
+    margin:37px 0 22px;
+
+    font-size:28px;
+
+    color:var(--gold-light);
+}
+
+.process-card h3{
+    font-family:"Playfair Display",serif;
+
+    font-size:25px;
+
+    font-weight:500;
+
+    margin-bottom:9px;
+}
+
+.process-card p{
+    color:#858e89;
+
+    font-size:11px;
+
+    line-height:1.75;
+}
+
+
+/* =========================================================
+   VSL
+========================================================= */
+
+.vsl-section{
+    background:#090b0b;
+}
+
+.vsl{
+    min-height:550px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:29px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.84),
+            rgba(0,0,0,.25)
+        ),
+        url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=2200&q=85")
+        center/cover;
+}
+
+.vsl-content{
+    max-width:700px;
+
+    text-align:center;
+
+    padding:30px;
+}
+
+.play-button{
+    width:82px;
+    height:82px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.55);
+
+    background:rgba(0,0,0,.35);
+
+    backdrop-filter:blur(12px);
+
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin:0 auto 25px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+}
+
+.play-button:hover{
+    transform:scale(1.08);
+
+    background:var(--gold);
+
+    color:#111;
+}
+
+.play-icon{
+    width:0;
+    height:0;
+
+    border-top:9px solid transparent;
+
+    border-bottom:9px solid transparent;
+
+    border-left:13px solid currentColor;
+
+    margin-left:4px;
+}
+
+.vsl-content h2{
+    font-family:"Playfair Display",serif;
+
+    font-size:
+        clamp(
+            39px,
+            5vw,
+            63px
+        );
+
+    font-weight:500;
+}
+
+.vsl-content p{
+    max-width:570px;
+
+    margin:17px auto 25px;
+
+    color:#c1c9c5;
+
+    font-size:14px;
+
+    line-height:1.8;
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.gallery-grid{
+    display:grid;
+
+    grid-template-columns:
+        1.2fr .8fr .8fr;
+
+    grid-auto-rows:260px;
+
+    gap:13px;
+}
+
+.gallery-item{
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:19px;
+}
+
+.gallery-item:first-child{
+    grid-row:span 2;
+}
+
+.gallery-item:nth-child(4){
+    grid-column:span 2;
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.65s ease;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.07);
+}
+
+.gallery-label{
+    position:absolute;
+
+    left:15px;
+    bottom:15px;
+
+    padding:8px 13px;
+
+    border-radius:30px;
+
+    background:rgba(7,8,8,.78);
+
+    backdrop-filter:blur(10px);
+
+    color:#e2e7e3;
+
+    font-size:10px;
+}
+
+
+/* =========================================================
+   REVIEWS
+========================================================= */
+
+.review-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+}
+
+.review{
+    padding:29px;
+
+    background:#151817;
+
+    border:1px solid var(--line);
+
+    border-radius:20px;
+}
+
+.stars{
+    color:var(--gold-light);
+
+    font-size:12px;
+
+    letter-spacing:4px;
+
+    margin-bottom:18px;
+}
+
+.review p{
+    color:#abb2ae;
+
+    font-size:13px;
+
+    line-height:1.85;
+
+    font-style:italic;
+}
+
+.review-bottom{
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:23px;
+
+    padding-top:16px;
+
+    border-top:1px solid var(--line);
+}
+
+.review-bottom strong{
+    font-size:12px;
+}
+
+.review-bottom span{
+    color:#707873;
+
+    font-size:9px;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq{
+    max-width:850px;
+
+    margin:auto;
+}
+
+.faq-item{
+    border-bottom:1px solid var(--line);
+}
+
+.faq-question{
+    width:100%;
+
+    padding:22px 0;
+
+    border:0;
+
+    background:none;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    text-align:left;
+
+    cursor:pointer;
+
+    font-size:14px;
+}
+
+.faq-plus{
+    color:var(--gold-light);
+
+    font-size:22px;
+
+    transition:.3s ease;
+}
+
+.faq-item.active .faq-plus{
+    transform:rotate(45deg);
+}
+
+.faq-answer{
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:.4s ease;
+}
+
+.faq-answer p{
+    padding:0 0 21px;
+
+    color:#858e89;
+
+    font-size:12px;
+
+    line-height:1.8;
+}
+
+
+/* =========================================================
+   LOCATION
+========================================================= */
+
+.location-section{
+    background:#101212;
+}
+
+.location-grid{
+    display:grid;
+
+    grid-template-columns:
+        .78fr 1.22fr;
+
+    gap:20px;
+}
+
+.location-card{
+    padding:39px;
+
+    background:#181c1a;
+
+    border:1px solid var(--line);
+
+    border-radius:23px;
+}
+
+.location-card h3{
+    font-family:"Playfair Display",serif;
+
+    font-size:37px;
+
+    font-weight:500;
+
+    margin-bottom:17px;
+}
+
+.location-card p{
+    color:#929b96;
+
+    font-size:13px;
+
+    line-height:1.8;
+}
+
+.contact-list{
+    display:grid;
+
+    gap:18px;
+
+    margin-top:28px;
+}
+
+.contact-row{
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:13px;
+}
+
+.contact-icon{
+    color:var(--gold-light);
+
+    font-size:18px;
+}
+
+.contact-row strong{
+    display:block;
+
+    font-size:11px;
+
+    margin-bottom:4px;
+}
+
+.contact-row a,
+.contact-row span{
+    color:#858d88;
+
+    font-size:11px;
+}
+
+.map{
+    min-height:450px;
+
+    overflow:hidden;
+
+    border-radius:23px;
+
+    border:1px solid var(--line);
+}
+
+.map iframe{
+    width:100%;
+    height:100%;
+
+    min-height:450px;
+
+    border:0;
+
+    filter:
+        grayscale(.8)
+        contrast(1.05);
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-section{
+    background:#161918;
+}
+
+.contact-grid{
+    display:grid;
+
+    grid-template-columns:
+        .9fr 1.1fr;
+
+    gap:70px;
+
+    align-items:center;
+}
+
+.contact-copy h2{
+    font-family:"Playfair Display",serif;
+
+    font-size:
+        clamp(
+            44px,
+            6vw,
+            75px
+        );
+
+    font-weight:500;
+
+    line-height:.98;
+}
+
+.contact-copy h2 span{
+    color:var(--gold-light);
+
+    font-style:italic;
+}
+
+.contact-copy p{
+    max-width:510px;
+
+    color:#929b96;
+
+    font-size:14px;
+
+    line-height:1.85;
+
+    margin-top:20px;
+}
+
+.contact-form{
+    display:grid;
+
+    gap:13px;
+}
+
+.form-row{
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:13px;
+}
+
+.input{
+    width:100%;
+
+    padding:15px 17px;
+
+    border:1px solid var(--line);
+
+    background:rgba(255,255,255,.035);
+
+    color:white;
+
+    border-radius:13px;
+
+    outline:none;
+}
+
+.input::placeholder{
+    color:#6f7873;
+}
+
+.input:focus{
+    border-color:
+        rgba(198,168,107,.65);
+}
+
+textarea.input{
+    min-height:135px;
+
+    resize:vertical;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    background:#070808;
+
+    border-top:1px solid var(--line);
+
+    padding:62px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+
+    grid-template-columns:
+        1.4fr .7fr .7fr .8fr;
+
+    gap:40px;
+
+    padding-bottom:45px;
+}
+
+.footer-brand p{
+    max-width:380px;
+
+    color:#686f6b;
+
+    font-size:11px;
+
+    line-height:1.8;
+
+    margin-top:16px;
+}
+
+.socials{
+    display:flex;
+
+    gap:9px;
+
+    margin-top:19px;
+}
+
+.social{
+    width:39px;
+    height:39px;
+
+    border:1px solid var(--line);
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    color:#b4bbb7;
+
+    transition:.3s ease;
+}
+
+.social:hover{
+    color:var(--gold-light);
+
+    border-color:var(--gold);
+
+    transform:translateY(-3px);
+}
+
+.footer-col h4{
+    color:#d2d8d4;
+
+    font-size:10px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:18px;
+}
+
+.footer-col a{
+    display:block;
+
+    color:#717975;
+
+    font-size:11px;
+
+    margin-bottom:11px;
+
+    transition:.25s ease;
+}
+
+.footer-col a:hover{
+    color:var(--gold-light);
+}
+
+.footer-bottom{
+    padding-top:22px;
+
+    border-top:1px solid var(--line);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:#555c58;
+
+    font-size:9px;
+}
+
+.footer-bottom strong{
+    color:var(--gold-light);
+
+    font-weight:500;
+}
+
+
+/* =========================================================
+   FLOATING ACTION BUTTONS
+========================================================= */
+
+.floating-actions{
+    position:fixed;
+
+    right:21px;
+    bottom:21px;
+
+    z-index:4000;
+
+    display:grid;
+
+    gap:9px;
+}
+
+.float-btn{
+    width:53px;
+    height:53px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+
+    font-size:20px;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.4);
+
+    transition:.3s ease;
+}
+
+.float-btn:hover{
+    transform:
+        translateY(-4px)
+        scale(1.04);
+}
+
+.call-btn{
+    background:#ad8147;
+}
+
+.whatsapp-btn{
+    background:#168d4e;
+}
+
+
+/* =========================================================
+   VIDEO MODAL
+========================================================= */
+
+.modal{
+    position:fixed;
+
+    inset:0;
+
+    z-index:99999;
+
+    background:rgba(0,0,0,.92);
+
+    backdrop-filter:blur(14px);
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:20px;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.3s ease;
+}
+
+.modal.open{
+    opacity:1;
+    visibility:visible;
+}
+
+.modal-box{
+    width:min(950px,100%);
+
+    position:relative;
+
+    padding:10px;
+
+    border-radius:20px;
+
+    background:#111;
+
+    border:1px solid var(--line);
+}
+
+.modal-image{
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.35),
+            rgba(0,0,0,.55)
+        ),
+        url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=2000&q=85")
+        center/cover;
+}
+
+.modal-image a{
+    background:var(--gold);
+
+    color:#111;
+
+    padding:15px 23px;
+
+    border-radius:50px;
+
+    font-size:12px;
+
+    font-weight:700;
+}
+
+.modal-close{
+    position:absolute;
+
+    right:0;
+    top:-53px;
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    color:white;
+
+    font-size:21px;
+
+    cursor:pointer;
+}
+
+
+/* =========================================================
+   REVEAL
+========================================================= */
+
+.reveal{
+    opacity:0;
+
+    transform:translateY(35px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal.visible{
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+.delay1{
+    transition-delay:.1s;
+}
+
+.delay2{
+    transition-delay:.2s;
+}
+
+.delay3{
+    transition-delay:.3s;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1050px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    .collection-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .process-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .location-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:700px){
+
+    section{
+        padding:80px 0;
+    }
+
+    .hero{
+        min-height:830px;
+    }
+
+    .hero-content{
+        padding-top:90px;
+    }
+
+    .hero h1{
+        letter-spacing:-1.5px;
+    }
+
+    .hero-description{
+        font-size:13px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .feature-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .feature{
+        border-right:0;
+
+        border-bottom:1px solid var(--line);
+
+        padding:17px 10px;
+    }
+
+    .feature:nth-last-child(-n+2){
+        border-bottom:0;
+    }
+
+    .collection-grid,
+    .product-grid,
+    .review-grid{
+        grid-template-columns:1fr;
+    }
+
+    .collection-card{
+        height:390px;
+    }
+
+    .about-points{
+        grid-template-columns:1fr;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:
+            1fr 1fr;
+
+        grid-auto-rows:210px;
+    }
+
+    .gallery-item:first-child{
+        grid-row:span 2;
+    }
+
+    .gallery-item:nth-child(4){
+        grid-column:span 2;
+    }
+
+    .vsl{
+        min-height:500px;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .location-card{
+        padding:28px;
+    }
+
+    .footer-grid{
+        grid-template-columns:
+            1fr 1fr;
+
+        gap:32px 20px;
+    }
+
+    .footer-brand{
+        grid-column:span 2;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+
+        gap:10px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .logo-text strong{
+        font-size:13px;
+    }
+
+    .logo-text small{
+        font-size:7px;
+    }
+
+    .logo-mark{
+        width:40px;
+        height:40px;
+    }
+
+    .hero h1{
+        font-size:51px;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+
+        grid-auto-rows:240px;
+    }
+
+    .gallery-item:first-child,
+    .gallery-item:nth-child(4){
+        grid-row:auto;
+        grid-column:auto;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-brand{
+        grid-column:auto;
+    }
+
+    .floating-actions{
+        right:14px;
+        bottom:14px;
+    }
+
+    .float-btn{
+        width:49px;
+        height:49px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     PRELOADER
+========================================================= -->
+
+<div class="preloader" id="preloader">
+
+    <div class="loader">
+
+        <div class="loader-logo">
+            TC
+        </div>
+
+        <div class="loader-text">
+            TCERA International
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<header class="navbar" id="navbar">
+
+    <div class="container nav-inner">
+
+        <a href="#home" class="logo">
+
+            <div class="logo-mark">
+                TC
+            </div>
+
+            <div class="logo-text">
+
+                <strong>
+                    TCERA International
+                </strong>
+
+                <small>
+                    Sanitaryware • Sinks • Bathware
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#collections">
+                Collections
+            </a>
+
+            <a href="#products">
+                Products
+            </a>
+
+            <a href="#manufacturing">
+                Manufacturing
+            </a>
+
+            <a href="#projects">
+                Gallery
+            </a>
+
+            <a href="#faq">
+                FAQ
+            </a>
+
+            <a
+                href="#contact"
+                class="nav-cta">
+
+                Enquire
+
+            </a>
+
+        </nav>
+
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu">
+
+            <span class="menu-lines"></span>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MOBILE MENU
+========================================================= -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <button
+        class="mobile-close"
+        id="mobileClose">
+
+        ×
+
+    </button>
+
+
+    <div class="mobile-links">
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#about">
+            About
+        </a>
+
+        <a href="#collections">
+            Collections
+        </a>
+
+        <a href="#products">
+            Products
+        </a>
+
+        <a href="#manufacturing">
+            Manufacturing
+        </a>
+
+        <a href="#projects">
+            Gallery
+        </a>
+
+        <a href="#reviews">
+            Reviews
+        </a>
+
+        <a href="#faq">
+            FAQ
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+    </div>
+
+</div>
+
+
+<main>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="home">
+
+
+    <div class="hero-slides">
+
+
+        <div
+            class="hero-slide active"
+            style="
+            background-image:url(
+            'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=2400&q=85'
+            );
+            ">
+        </div>
+
+
+        <div
+            class="hero-slide"
+            style="
+            background-image:url(
+            'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=2400&q=85'
+            );
+            ">
+        </div>
+
+
+        <div
+            class="hero-slide"
+            style="
+            background-image:url(
+            'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=2400&q=85'
+            );
+            ">
+        </div>
+
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="hero-content reveal visible">
+
+
+            <div class="eyebrow">
+                Premium Bathroom Craftsmanship
+            </div>
+
+
+            <h1>
+
+                Crafting elegance<br>
+
+                for your
+                <span>
+                    home.
+                </span>
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                Premium sanitaryware, imported handmade sinks,
+                quartz sinks and thoughtfully designed bathroom
+                solutions created to bring character and elegance
+                into modern spaces.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+
+                <a
+                    href="#collections"
+                    class="btn btn-gold magnetic">
+
+                    Explore Collection
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="tel:+919313189889"
+                    class="btn btn-outline magnetic">
+
+                    Call TCERA
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-bottom">
+
+        <div class="container hero-bottom-inner">
+
+            <div class="hero-note">
+
+                Sanitaryware • Handmade Sinks • Quartz Sinks
+
+            </div>
+
+
+            <div
+                class="slide-number"
+                id="slideNumber">
+
+                01 / 03
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     FEATURE STRIP
+========================================================= -->
+
+<div class="feature-strip">
+
+    <div class="container feature-grid">
+
+
+        <div class="feature reveal">
+
+            <div class="feature-icon">
+                ◇
+            </div>
+
+            <strong>
+                Handmade Sinks
+            </strong>
+
+            <span>
+                Distinctive craftsmanship
+            </span>
+
+        </div>
+
+
+        <div class="feature reveal delay1">
+
+            <div class="feature-icon">
+                ◆
+            </div>
+
+            <strong>
+                Quartz Sinks
+            </strong>
+
+            <span>
+                Modern kitchen surfaces
+            </span>
+
+        </div>
+
+
+        <div class="feature reveal delay2">
+
+            <div class="feature-icon">
+                ✦
+            </div>
+
+            <strong>
+                Sanitaryware
+            </strong>
+
+            <span>
+                Elegant bathroom solutions
+            </span>
+
+        </div>
+
+
+        <div class="feature reveal delay3">
+
+            <div class="feature-icon">
+                ✓
+            </div>
+
+            <strong>
+                Quality Focus
+            </strong>
+
+            <span>
+                Designed for modern living
+            </span>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section id="about">
+
+    <div class="container">
+
+
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                About TCERA
+            </div>
+
+            <h2>
+
+                Where utility meets
+                <span>
+                    artistry.
+                </span>
+
+            </h2>
+
+            <p>
+
+                TCERA International brings together
+                contemporary bathroom design, sanitaryware
+                and distinctive sink solutions.
+
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+
+            <div class="about-image reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1800&q=85"
+                    alt="Premium modern bathroom"
+                    loading="lazy"
+                >
+
+
+                <div class="about-badge">
+
+                    <strong>
+                        Crafted for modern spaces.
+                    </strong>
+
+                    <span>
+                        Elegant bathroom products with personality.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content reveal delay1">
+
+
+                <div class="eyebrow">
+                    Our Philosophy
+                </div>
+
+
+                <h3>
+
+                    Your bathroom should feel
+                    <span>
+                        unmistakably yours.
+                    </span>
+
+                </h3>
+
+
+                <p>
+
+                    TCERA International focuses on bathroom
+                    products that combine visual appeal with
+                    practical everyday functionality.
+
+                </p>
+
+
+                <p>
+
+                    From imported handmade sinks and quartz
+                    sink designs to sanitaryware collections,
+                    every category is selected around the idea
+                    of creating more refined spaces.
+
+                </p>
+
+
+                <div class="about-points">
+
+
+                    <div class="about-point">
+
+                        <strong>
+                            Handmade Sinks
+                        </strong>
+
+                        <span>
+                            Distinctive forms for kitchens and
+                            contemporary interiors.
+                        </span>
+
+                    </div>
+
+
+                    <div class="about-point">
+
+                        <strong>
+                            Quartz Collection
+                        </strong>
+
+                        <span>
+                            Modern sink solutions with a premium
+                            material aesthetic.
+                        </span>
+
+                    </div>
+
+
+                    <div class="about-point">
+
+                        <strong>
+                            Sanitaryware
+                        </strong>
+
+                        <span>
+                            Elegant products for modern bathrooms.
+                        </span>
+
+                    </div>
+
+
+                    <div class="about-point">
+
+                        <strong>
+                            Home Decor
+                        </strong>
+
+                        <span>
+                            Products designed to become part
+                            of the overall interior.
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     COLLECTIONS
+========================================================= -->
+
+<section
+    class="collections"
+    id="collections">
+
+    <div class="container">
+
+
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                Explore The Collection
+            </div>
+
+            <h2>
+
+                Designed around
+                <span>
+                    your space.
+                </span>
+
+            </h2>
+
+            <p>
+
+                Explore distinctive categories created for
+                bathrooms, kitchens and contemporary homes.
+
+            </p>
+
+        </div>
+
+
+        <div class="collection-grid">
+
+
+            <article class="collection-card reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1600&q=85"
+                    alt="Modern bathroom sanitaryware"
+                    loading="lazy"
+                >
+
+
+                <div class="collection-content">
+
+                    <div class="collection-number">
+                        01 — COLLECTION
+                    </div>
+
+                    <h3>
+                        Sanitaryware
+                    </h3>
+
+                    <p>
+                        Contemporary bathroom products
+                        designed around modern lifestyles.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="collection-card reveal delay1">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=85"
+                    alt="Premium bathroom basin"
+                    loading="lazy"
+                >
+
+
+                <div class="collection-content">
+
+                    <div class="collection-number">
+                        02 — COLLECTION
+                    </div>
+
+                    <h3>
+                        Handmade Sinks
+                    </h3>
+
+                    <p>
+                        Imported handmade sink designs
+                        with an artistic character.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="collection-card reveal delay2">
+
+                <img
+                    src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1600&q=85"
+                    alt="Luxury bathroom basin"
+                    loading="lazy"
+                >
+
+
+                <div class="collection-content">
+
+                    <div class="collection-number">
+                        03 — COLLECTION
+                    </div>
+
+                    <h3>
+                        Designer Basins
+                    </h3>
+
+                    <p>
+                        Sculptural wash basin solutions
+                        for statement bathrooms.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="collection-card reveal delay3">
+
+                <img
+                    src="https://images.unsplash.com/photo-1584622781867-2f8a5a1c9b56?auto=format&fit=crop&w=1600&q=85"
+                    alt="Modern bathroom interior"
+                    loading="lazy"
+                >
+
+
+                <div class="collection-content">
+
+                    <div class="collection-number">
+                        04 — COLLECTION
+                    </div>
+
+                    <h3>
+                        Quartz Sinks
+                    </h3>
+
+                    <p>
+                        Contemporary sink surfaces combining
+                        performance and visual depth.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PRODUCTS
+========================================================= -->
+
+<section id="products">
+
+    <div class="container">
+
+
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                Product Categories
+            </div>
+
+            <h2>
+
+                A collection for
+                <span>
+                    every detail.
+                </span>
+
+            </h2>
+
+            <p>
+
+                Explore products suited to residential,
+                hospitality, commercial and design-led spaces.
+
+            </p>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            <article class="product-card reveal">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1500&q=85"
+                        alt="Handmade sink"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-tag">
+                        01 / Sink
+                    </div>
+
+                    <h3>
+                        Handmade Sinks
+                    </h3>
+
+                    <p>
+
+                        Imported handmade sinks designed
+                        to add individuality to modern kitchens
+                        and utility spaces.
+
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="product-link">
+
+                        Enquire Collection →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card reveal delay1">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1584622781867-2f8a5a1c9b56?auto=format&fit=crop&w=1500&q=85"
+                        alt="Quartz sink"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-tag">
+                        02 / Quartz
+                    </div>
+
+                    <h3>
+                        Quartz Sinks
+                    </h3>
+
+                    <p>
+
+                        Contemporary sink solutions with
+                        a sophisticated quartz-inspired finish.
+
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="product-link">
+
+                        Enquire Collection →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card reveal delay2">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1500&q=85"
+                        alt="Designer wash basin"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-tag">
+                        03 / Basin
+                    </div>
+
+                    <h3>
+                        Designer Basins
+                    </h3>
+
+                    <p>
+
+                        Statement wash basin forms for
+                        contemporary bathroom interiors.
+
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="product-link">
+
+                        Enquire Collection →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card reveal">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1500&q=85"
+                        alt="Sanitaryware bathroom"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-tag">
+                        04 / Sanitaryware
+                    </div>
+
+                    <h3>
+                        Bathroom Sanitaryware
+                    </h3>
+
+                    <p>
+
+                        Elegant bathroom essentials designed
+                        for contemporary residential spaces.
+
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="product-link">
+
+                        Explore Products →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card reveal delay1">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1500&q=85"
+                        alt="Luxury bathroom"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-tag">
+                        05 / Bath
+                    </div>
+
+                    <h3>
+                        Complete Bath Spaces
+                    </h3>
+
+                    <p>
+
+                        Coordinate sinks, sanitaryware and
+                        surfaces into one cohesive bathroom.
+
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="product-link">
+
+                        Discuss Your Project →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card reveal delay2">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1500&q=85"
+                        alt="Premium bathroom interior"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-tag">
+                        06 / Projects
+                    </div>
+
+                    <h3>
+                        Project Solutions
+                    </h3>
+
+                    <p>
+
+                        Product selection for designers,
+                        builders, dealers and project requirements.
+
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="product-link">
+
+                        Start Enquiry →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MANUFACTURING
+========================================================= -->
+
+<section
+    class="process-section"
+    id="manufacturing">
+
+    <div class="container">
+
+
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                The TCERA Approach
+            </div>
+
+            <h2>
+
+                From concept to
+                <span>
+                    craftsmanship.
+                </span>
+
+            </h2>
+
+            <p>
+
+                A product is more than its appearance.
+                Materials, finishing, detailing and quality
+                all contribute to the final experience.
+
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+            <article class="process-card reveal">
+
+                <div class="process-number">
+                    01
+                </div>
+
+                <div class="process-icon">
+                    ◇
+                </div>
+
+                <h3>
+                    Material
+                </h3>
+
+                <p>
+                    Careful attention to the materials and
+                    product construction behind each category.
+                </p>
+
+            </article>
+
+
+            <article class="process-card reveal delay1">
+
+                <div class="process-number">
+                    02
+                </div>
+
+                <div class="process-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Form
+                </h3>
+
+                <p>
+                    Product silhouettes are selected around
+                    modern bathroom and interior aesthetics.
+                </p>
+
+            </article>
+
+
+            <article class="process-card reveal delay2">
+
+                <div class="process-number">
+                    03
+                </div>
+
+                <div class="process-icon">
+                    ◆
+                </div>
+
+                <h3>
+                    Finish
+                </h3>
+
+                <p>
+                    Surface character and finishing details
+                    create the final visual identity.
+                </p>
+
+            </article>
+
+
+            <article class="process-card reveal delay3">
+
+                <div class="process-number">
+                    04
+                </div>
+
+                <div class="process-icon">
+                    ✓
+                </div>
+
+                <h3>
+                    Experience
+                </h3>
+
+                <p>
+                    The final goal is a bathroom product
+                    that looks refined and feels considered.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     VSL
+========================================================= -->
+
+<section
+    class="vsl-section"
+    id="video">
+
+    <div class="container">
+
+
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                Visual Inspiration
+            </div>
+
+            <h2>
+
+                Crafted to change
+                <span>
+                    the room.
+                </span>
+
+            </h2>
+
+            <p>
+
+                Explore TCERA's product world and visual
+                inspiration through the brand's Instagram.
+
+            </p>
+
+        </div>
+
+
+        <div class="vsl reveal">
+
+
+            <div class="vsl-content">
+
+
+                <button
+                    class="play-button"
+                    id="openVideo"
+                    aria-label="Open TCERA Instagram">
+
+                    <span class="play-icon"></span>
+
+                </button>
+
+
+                <div
+                    class="eyebrow"
+                    style="justify-content:center;">
+
+                    @tcerainternational
+
+                </div>
+
+
+                <h2>
+
+                    Bathroom design,
+                    <br>
+
+                    <span style="
+                        color:var(--gold-light);
+                        font-style:italic;
+                    ">
+                        reimagined.
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Discover sanitaryware, handmade sinks,
+                    quartz sinks and design inspiration from
+                    TCERA International.
+
+                </p>
+
+
+                <a
+                    href="https://www.instagram.com/tcerainternational/"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-gold magnetic">
+
+                    Visit Instagram ↗
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROJECTS / GALLERY
+========================================================= -->
+
+<section id="projects">
+
+    <div class="container">
+
+
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                Project Inspiration
+            </div>
+
+            <h2>
+
+                Products inside
+                <span>
+                    beautiful spaces.
+                </span>
+
+            </h2>
+
+            <p>
+
+                Inspiration for bathrooms, kitchens,
+                hospitality interiors and modern homes.
+
+            </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+
+            <div class="gallery-item reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=85"
+                    alt="Luxury bathroom interior"
+                    loading="lazy"
+                >
+
+                <span class="gallery-label">
+                    Luxury Bathroom
+                </span>
+
+            </div>
+
+
+            <div class="gallery-item reveal delay1">
+
+                <img
+                    src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1400&q=85"
+                    alt="Designer wash basin"
+                    loading="lazy"
+                >
+
+                <span class="gallery-label">
+                    Designer Basins
+                </span>
+
+            </div>
+
+
+            <div class="gallery-item reveal delay2">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=85"
+                    alt="Bathroom sink"
+                    loading="lazy"
+                >
+
+                <span class="gallery-label">
+                    Sink Collection
+                </span>
+
+            </div>
+
+
+            <div class="gallery-item reveal delay3">
+
+                <img
+                    src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1800&q=85"
+                    alt="Modern sanitaryware bathroom"
+                    loading="lazy"
+                >
+
+                <span class="gallery-label">
+                    Modern Sanitaryware
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     REVIEWS
+========================================================= -->
+
+<section id="reviews">
+
+    <div class="container">
+
+
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                Customer Experience
+            </div>
+
+            <h2>
+
+                Designed around
+                <span>
+                    trust.
+                </span>
+
+            </h2>
+
+            <p>
+
+                Bathroom products become part of a space for
+                years. The experience should therefore feel
+                as considered as the product itself.
+
+            </p>
+
+        </div>
+
+
+        <div class="review-grid">
+
+
+            <article class="review reveal">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+
+                    “The handmade sink design became the
+                    centrepiece of our kitchen. The finish
+                    gave the entire space a more premium feel.”
+
+                </p>
+
+                <div class="review-bottom">
+
+                    <strong>
+                        Home Project
+                    </strong>
+
+                    <span>
+                        Customer
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <article class="review reveal delay1">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+
+                    “We were looking for something different
+                    from standard bathroom products. The
+                    designer sink options gave us exactly
+                    that direction.”
+
+                </p>
+
+                <div class="review-bottom">
+
+                    <strong>
+                        Interior Project
+                    </strong>
+
+                    <span>
+                        Customer
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <article class="review reveal delay2">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+
+                    “The collection works particularly well
+                    when the bathroom is being designed as
+                    part of the overall interior.”
+
+                </p>
+
+                <div class="review-bottom">
+
+                    <strong>
+                        Residential
+                    </strong>
+
+                    <span>
+                        Customer
+                    </span>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section id="faq">
+
+    <div class="container">
+
+
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                Frequently Asked
+            </div>
+
+            <h2>
+
+                Everything before
+                <span>
+                    you choose.
+                </span>
+
+            </h2>
+
+            <p>
+
+                Common questions about TCERA's sanitaryware
+                and sink collections.
+
+            </p>
+
+        </div>
+
+
+        <div class="faq">
+
+
+            <div class="faq-item reveal">
+
+                <button class="faq-question">
+
+                    <span>
+                        What products does TCERA International offer?
+                    </span>
+
+                    <span class="faq-plus">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        The brand positioning shown in the supplied
+                        profile includes sanitaryware, imported
+                        handmade sinks and quartz sinks. Contact
+                        TCERA for the latest product catalogue.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item reveal">
+
+                <button class="faq-question">
+
+                    <span>
+                        Do you provide handmade sinks?
+                    </span>
+
+                    <span class="faq-plus">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Yes. Imported handmade sinks are one of
+                        the primary product categories highlighted
+                        by TCERA International.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item reveal">
+
+                <button class="faq-question">
+
+                    <span>
+                        Are quartz sinks available?
+                    </span>
+
+                    <span class="faq-plus">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Quartz sinks are featured as a dedicated
+                        product category. Contact the team for
+                        current designs, colours and availability.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item reveal">
+
+                <button class="faq-question">
+
+                    <span>
+                        Can I contact TCERA on WhatsApp?
+                    </span>
+
+                    <span class="faq-plus">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Yes. Use any WhatsApp button on this
+                        website to start a direct conversation
+                        with TCERA International.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item reveal">
+
+                <button class="faq-question">
+
+                    <span>
+                        Where is TCERA International located?
+                    </span>
+
+                    <span class="faq-plus">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        The supplied Instagram profile identifies
+                        Thangadh, Gujarat. Contact the company
+                        directly to confirm the exact showroom
+                        or manufacturing location before visiting.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LOCATION
+========================================================= -->
+
+<section
+    class="location-section"
+    id="location">
+
+    <div class="container">
+
+
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                Find TCERA
+            </div>
+
+            <h2>
+
+                From Thangadh to
+                <span>
+                    your home.
+                </span>
+
+            </h2>
+
+            <p>
+
+                The supplied profile identifies TCERA with
+                Thangadh, Gujarat. Contact the company directly
+                for exact directions and showroom details.
+
+            </p>
+
+        </div>
+
+
+        <div class="location-grid">
+
+
+            <div class="location-card reveal">
+
+
+                <div class="eyebrow">
+                    Contact TCERA
+                </div>
+
+
+                <h3>
+                    TCERA International
+                </h3>
+
+
+                <p>
+
+                    Sanitaryware manufacturer and supplier
+                    specialising in imported handmade sinks,
+                    quartz sinks and bathroom solutions.
+
+                </p>
+
+
+                <div class="contact-list">
+
+
+                    <div class="contact-row">
+
+                        <div class="contact-icon">
+                            ☎
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Call
+                            </strong>
+
+                            <a href="tel:+919313189889">
+                                9313189889
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-row">
+
+                        <div class="contact-icon">
+                            ◉
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                WhatsApp
+                            </strong>
+
+                            <a
+                                href="https://wa.me/919313189889"
+                                target="_blank"
+                                rel="noopener">
+
+                                Chat on WhatsApp
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-row">
+
+                        <div class="contact-icon">
+                            ◎
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Instagram
+                            </strong>
+
+                            <a
+                                href="https://www.instagram.com/tcerainternational/"
+                                target="_blank"
+                                rel="noopener">
+
+                                @tcerainternational
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-row">
+
+                        <div class="contact-icon">
+                            ⌖
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Location
+                            </strong>
+
+                            <span>
+                                Thangadh, Gujarat
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <br>
+
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Thangadh%20Gujarat"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-gold magnetic">
+
+                    Open Google Maps ↗
+
+                </a>
+
+
+            </div>
+
+
+            <div class="map reveal delay1">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Thangadh%2C%20Gujarat&output=embed"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section
+    class="contact-section"
+    id="contact">
+
+    <div class="container">
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-copy reveal">
+
+
+                <div class="eyebrow">
+                    Start Your Enquiry
+                </div>
+
+
+                <h2>
+
+                    Let's make your
+                    <span>
+                        space exceptional.
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Tell us what you're looking for — handmade
+                    sinks, quartz sinks, sanitaryware or a
+                    complete bathroom requirement.
+
+                </p>
+
+
+                <br>
+
+
+                <a
+                    href="https://wa.me/919313189889"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-gold magnetic">
+
+                    WhatsApp TCERA
+
+                </a>
+
+
+            </div>
+
+
+            <form
+                class="contact-form reveal delay1"
+                id="contactForm">
+
+
+                <div class="form-row">
+
+
+                    <input
+                        class="input"
+                        id="name"
+                        type="text"
+                        placeholder="Your Name"
+                        required>
+
+
+                    <input
+                        class="input"
+                        id="phone"
+                        type="tel"
+                        placeholder="Phone Number"
+                        required>
+
+
+                </div>
+
+
+                <input
+                    class="input"
+                    id="requirement"
+                    type="text"
+                    placeholder="What product are you looking for?"
+                    required>
+
+
+                <textarea
+                    class="input"
+                    id="message"
+                    placeholder="Tell us about your project or requirement...">
+                </textarea>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-gold magnetic">
+
+                    Send Enquiry on WhatsApp →
+
+                </button>
+
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="container">
+
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+
+                <a href="#home" class="logo">
+
+
+                    <div class="logo-mark">
+                        TC
+                    </div>
+
+
+                    <div class="logo-text">
+
+                        <strong>
+                            TCERA International
+                        </strong>
+
+                        <small>
+                            Sanitaryware • Sinks • Bathware
+                        </small>
+
+                    </div>
+
+
+                </a>
+
+
+                <p>
+
+                    Crafting elegance for your home through
+                    sanitaryware, imported handmade sinks,
+                    quartz sinks and modern bathroom solutions.
+
+                </p>
+
+
+                <div class="socials">
+
+
+                    <a
+                        class="social"
+                        href="https://www.instagram.com/tcerainternational/"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Instagram">
+
+                        ◎
+
+                    </a>
+
+
+                    <a
+                        class="social"
+                        href="https://wa.me/919313189889"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="WhatsApp">
+
+                        ◉
+
+                    </a>
+
+
+                    <a
+                        class="social"
+                        href="tel:+919313189889"
+                        aria-label="Call">
+
+                        ☎
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-col">
+
+
+                <h4>
+                    Explore
+                </h4>
+
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#collections">
+                    Collections
+                </a>
+
+                <a href="#products">
+                    Products
+                </a>
+
+                <a href="#manufacturing">
+                    Manufacturing
+                </a>
+
+
+            </div>
+
+
+            <div class="footer-col">
+
+
+                <h4>
+                    Discover
+                </h4>
+
+
+                <a href="#projects">
+                    Gallery
+                </a>
+
+                <a href="#reviews">
+                    Reviews
+                </a>
+
+                <a href="#faq">
+                    FAQ
+                </a>
+
+                <a href="#location">
+                    Location
+                </a>
+
+
+            </div>
+
+
+            <div class="footer-col">
+
+
+                <h4>
+                    Contact
+                </h4>
+
+
+                <a href="tel:+919313189889">
+                    9313189889
+                </a>
+
+
+                <a
+                    href="https://www.instagram.com/tcerainternational/"
+                    target="_blank"
+                    rel="noopener">
+
+                    @tcerainternational
+
+                </a>
+
+
+                <a
+                    href="https://wa.me/919313189889"
+                    target="_blank"
+                    rel="noopener">
+
+                    WhatsApp
+
+                </a>
+
+
+                <a href="#contact">
+                    Send Enquiry
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+
+            <span>
+
+                ©
+                <span id="year"></span>
+
+                TCERA International.
+                All Rights Reserved.
+
+            </span>
+
+
+            <span>
+
+                Designed by
+
+                <strong>
+                    Marwar Infotech
+                </strong>
+
+            </span>
+
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     FLOATING ACTION BUTTONS
+========================================================= -->
+
+<div class="floating-actions">
+
+
+    <a
+        href="tel:+919313189889"
+        class="float-btn call-btn"
+        aria-label="Call TCERA"
+        title="Call">
+
+        ☎
+
+    </a>
+
+
+    <a
+        href="https://wa.me/919313189889"
+        target="_blank"
+        rel="noopener"
+        class="float-btn whatsapp-btn"
+        aria-label="WhatsApp TCERA"
+        title="WhatsApp">
+
+        ◉
+
+    </a>
+
+
+</div>
+
+
+<!-- =========================================================
+     MODAL
+========================================================= -->
+
+<div
+    class="modal"
+    id="modal">
+
+
+    <div class="modal-box">
+
+
+        <button
+            class="modal-close"
+            id="modalClose">
+
+            ×
+
+        </button>
+
+
+        <div class="modal-image">
+
+
+            <a
+                href="https://www.instagram.com/tcerainternational/"
+                target="_blank"
+                rel="noopener">
+
+                View @tcerainternational on Instagram ↗
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+
+/* =========================================================
+   PRELOADER
+========================================================= */
+
+window.addEventListener("load",()=>{
+
+    setTimeout(()=>{
+
+        document
+            .getElementById("preloader")
+            .classList
+            .add("hide");
+
+    },900);
+
+});
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+const navbar =
+    document.getElementById("navbar");
+
+window.addEventListener("scroll",()=>{
+
+    if(window.scrollY > 40){
+
+        navbar
+            .classList
+            .add("scrolled");
+
+    }else{
+
+        navbar
+            .classList
+            .remove("scrolled");
+
+    }
+
+});
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const mobileMenu =
+    document.getElementById("mobileMenu");
+
+const mobileClose =
+    document.getElementById("mobileClose");
+
+
+menuToggle.addEventListener("click",()=>{
+
+    mobileMenu
+        .classList
+        .add("open");
+
+    document.body
+        .classList
+        .add("menu-open");
+
+});
+
+
+mobileClose.addEventListener("click",()=>{
+
+    mobileMenu
+        .classList
+        .remove("open");
+
+    document.body
+        .classList
+        .remove("menu-open");
+
+});
+
+
+document
+    .querySelectorAll(".mobile-links a")
+    .forEach(link=>{
+
+        link.addEventListener("click",()=>{
+
+            mobileMenu
+                .classList
+                .remove("open");
+
+            document.body
+                .classList
+                .remove("menu-open");
+
+        });
+
+    });
+
+
+/* =========================================================
+   HERO SLIDER
+========================================================= */
+
+const slides =
+    document.querySelectorAll(".hero-slide");
+
+const slideNumber =
+    document.getElementById("slideNumber");
+
+let currentSlide = 0;
+
+
+setInterval(()=>{
+
+    slides[currentSlide]
+        .classList
+        .remove("active");
+
+
+    currentSlide =
+        (currentSlide + 1)
+        %
+        slides.length;
+
+
+    slides[currentSlide]
+        .classList
+        .add("active");
+
+
+    slideNumber.textContent =
+        String(currentSlide + 1)
+        .padStart(2,"0")
+        +
+        " / "
+        +
+        String(slides.length)
+        .padStart(2,"0");
+
+},5500);
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+const observer =
+    new IntersectionObserver(
+        entries=>{
+
+            entries.forEach(entry=>{
+
+                if(entry.isIntersecting){
+
+                    entry.target
+                        .classList
+                        .add("visible");
+
+                    observer
+                        .unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+        {
+            threshold:.12
+        }
+    );
+
+
+document
+    .querySelectorAll(".reveal")
+    .forEach(element=>{
+
+        observer.observe(element);
+
+    });
+
+
+/* =========================================================
+   MAGNETIC BUTTON
+========================================================= */
+
+document
+    .querySelectorAll(".magnetic")
+    .forEach(button=>{
+
+
+        button.addEventListener(
+            "mousemove",
+            event=>{
+
+                const rect =
+                    button.getBoundingClientRect();
+
+
+                const x =
+                    event.clientX
+                    -
+                    rect.left
+                    -
+                    rect.width / 2;
+
+
+                const y =
+                    event.clientY
+                    -
+                    rect.top
+                    -
+                    rect.height / 2;
+
+
+                button.style.transform =
+                    `translate(
+                        ${x*.12}px,
+                        ${y*.12}px
+                    )`;
+
+            }
+        );
+
+
+        button.addEventListener(
+            "mouseleave",
+            ()=>{
+
+                button.style.transform="";
+
+            }
+        );
+
+
+    });
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+document
+    .querySelectorAll(".faq-question")
+    .forEach(button=>{
+
+
+        button.addEventListener(
+            "click",
+            ()=>{
+
+
+                const item =
+                    button.parentElement;
+
+
+                const answer =
+                    item.querySelector(
+                        ".faq-answer"
+                    );
+
+
+                document
+                    .querySelectorAll(".faq-item")
+                    .forEach(other=>{
+
+                        if(other !== item){
+
+                            other
+                                .classList
+                                .remove("active");
+
+                            other
+                                .querySelector(
+                                    ".faq-answer"
+                                )
+                                .style
+                                .maxHeight = null;
+
+                        }
+
+                    });
+
+
+                item
+                    .classList
+                    .toggle("active");
+
+
+                if(
+                    item
+                        .classList
+                        .contains("active")
+                ){
+
+                    answer.style.maxHeight =
+                        answer.scrollHeight
+                        +
+                        "px";
+
+                }else{
+
+                    answer.style.maxHeight = null;
+
+                }
+
+            }
+        );
+
+
+    });
+
+
+/* =========================================================
+   CONTACT FORM
+========================================================= */
+
+const contactForm =
+    document.getElementById(
+        "contactForm"
+    );
+
+
+contactForm.addEventListener(
+    "submit",
+    event=>{
+
+
+        event.preventDefault();
+
+
+        const name =
+            document
+                .getElementById("name")
+                .value
+                .trim();
+
+
+        const phone =
+            document
+                .getElementById("phone")
+                .value
+                .trim();
+
+
+        const requirement =
+            document
+                .getElementById("requirement")
+                .value
+                .trim();
+
+
+        const message =
+            document
+                .getElementById("message")
+                .value
+                .trim();
+
+
+        const text =
+`
+Hello TCERA International,
+
+Name: ${name}
+
+Phone: ${phone}
+
+Product Requirement:
+${requirement}
+
+Project Details:
+${message}
+`;
+
+
+        const url =
+            "https://wa.me/919313189889?text="
+            +
+            encodeURIComponent(text);
+
+
+        window.open(
+            url,
+            "_blank"
+        );
+
+
+    }
+);
+
+
+/* =========================================================
+   VSL MODAL
+========================================================= */
+
+const modal =
+    document.getElementById("modal");
+
+const openVideo =
+    document.getElementById("openVideo");
+
+const modalClose =
+    document.getElementById("modalClose");
+
+
+openVideo.addEventListener(
+    "click",
+    ()=>{
+
+        modal
+            .classList
+            .add("open");
+
+    }
+);
+
+
+modalClose.addEventListener(
+    "click",
+    ()=>{
+
+        modal
+            .classList
+            .remove("open");
+
+    }
+);
+
+
+modal.addEventListener(
+    "click",
+    event=>{
+
+        if(
+            event.target === modal
+        ){
+
+            modal
+                .classList
+                .remove("open");
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   ESC
+========================================================= */
+
+document.addEventListener(
+    "keydown",
+    event=>{
+
+        if(event.key === "Escape"){
+
+            mobileMenu
+                .classList
+                .remove("open");
+
+            modal
+                .classList
+                .remove("open");
+
+            document.body
+                .classList
+                .remove("menu-open");
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   YEAR
+========================================================= */
+
+document
+    .getElementById("year")
+    .textContent =
+    new Date().getFullYear();
+
+
+</script>
+
+</body>
+</html>
